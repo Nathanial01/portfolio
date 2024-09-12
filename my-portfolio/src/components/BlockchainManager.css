@@ -1,0 +1,89 @@
+:root {
+  --smiley-1: '😊';
+  --smiley-2: '😇';
+  --smiley-3: '😁';
+  --smiley-4: '😉';
+  --color-0: #ffffff;
+  --color-1: #15791a;
+  --color-2: #a3f706;
+  --color-3: #ffae00;
+  --color-4: hsl(198, 62%, 48%);
+  --color-5: #17d21e;
+  --color-6: rgb(20, 64, 40);
+  --color-7: rgb(0, 255, 115);
+  --color-8:  rgb(20, 64, 40);
+  --color-9:#ff7;
+ 
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+
+
+  }
+  .Bcard { 
+    padding: 50px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+   
+    background-color:var(--color-9);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+  
+
+.update-item {
+  display: inline-block;
+  padding: 0 20px; 
+  position: relative; 
+}
+
+.hidden-message {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  position: absolute;
+  top: 60%; 
+  left: -70PX;
+  background-color: #333;
+  color: #ff3300;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.hidden-message::before {
+  content: var(--smiley-1);
+  margin-right: 5px;
+}
+.update-item:hover .hidden-message {
+  content: var(--smiley-1);
+  visibility: visible;
+  opacity: 1;
+}
+  .Bcard:hover {
+    filter: blur(10px);
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  
+  input,
+  button {
+    
+    display: block;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+
+  
+  .collector {
+    display: flex;
+  }

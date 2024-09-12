@@ -1,0 +1,40 @@
+.header {
+  text-align: left;
+  padding: 20px;
+}
+.header h1{
+  margin-top: 10%;
+ 
+}
+.header-content {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 10%;
+}
+
+.curved-text-wrapper {
+  position: relative;
+  margin-left: 20px;
+}
+.orbit-container{
+  width: 200px;
+  height: 200px;
+ margin-top: 50px;
+ margin-left: 70px;
+  transform: scale(0.4);
+}
+
+.orbiting-element-wrapper {
+
+  width: 300px; 
+  height:300px; 
+  border-radius: 50%;
+  background-color: #f0a40000;
+  float: left;
+  shape-outside: circle(50%);
+  clip-path: circle(50%);
+  margin-right: 20px; 
+
+}

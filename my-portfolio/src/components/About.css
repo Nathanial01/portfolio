@@ -1,0 +1,126 @@
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the start to manage vertical spacing */
+    padding: 2rem;
+    background-color: #00000000;
+  }
+  
+  .container {
+    width: 30%;
+    max-width: 500px;
+    background-color: rgba(91, 84, 84, 0.123); /* semi-transparent background */
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    position: relative; /* make container a positioning context */
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; /* inherit the background to blur */
+    z-index: -1; /* place behind the container */
+    filter: blur(50%); /* apply blur effect */
+    border-radius: 10px; /* match border radius */
+  }
+  
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  h2, h3, h4 {
+    color: #ffffff;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  .section {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem; /* Create space at the bottom for the dropdown */
+  }
+  
+  .section h4 {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #11ff0000;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .section h4:hover {
+    background-color: #73787e00;
+    transform: scale(1.05);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(152, 156, 158, 0);
+    border-radius: 0 0 8px 8px;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    z-index: 10; /* Ensure dropdown content is above other content */
+  }
+  
+  .section:hover .dropdown-content {
+    display: block;
+  }
+  
+  .box {
+    background-color: rgb(152, 156, 158);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .box:hover {
+    background-color: #e1e1e1;
+    transform: scale(1.02);
+  }
+  
+  a {
+    color: #fcfcfc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+ 
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+
+  

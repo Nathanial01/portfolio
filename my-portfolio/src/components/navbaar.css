@@ -1,0 +1,165 @@
+:root {
+  --smiley-1: '😊';
+  --smiley-2: '😇';
+  --smiley-3: '😁';
+  --smiley-4: '😉';
+  --color-0: #ffffff;
+  --color-1: #15791a;
+  --color-2: #a3f706;
+  --color-3: #ff7b00;
+  --color-4: hsl(198, 62%, 48%);
+  --color-5: #17d21e;
+  --color-6: rgb(20, 64, 40);
+  --color-7: rgb(0, 255, 115);
+  --color-7: #ff7;
+}
+
+body {
+padding: 0;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.navbar-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 300px;
+  margin-top: 2rem;
+}
+
+.navbar-container {
+  width: 95%;
+  margin-top: 50rem;
+}
+
+.navbar-brand-custom {
+  font-size: 3rem;
+}
+
+.navbar-brand-text {
+ 
+  color: var(--color-0);
+  font-size: 2rem;
+  font-weight: 900;
+  filter: blur(15px);
+  animation: fradiate 10s infinite linear;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+ 
+}
+
+.nav-link-custom {
+  color: #ffffff;
+  text-decoration: none;
+margin: 20px;
+  border-radius: 50px;
+}
+
+.nav-link-custom:hover {
+  color: var(--color-4);
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.navbar-brand-custom  span {
+margin-left: -120%;
+}
+.navbar-search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25000px; 
+  overflow: hidden; 
+  background-color: var(--color-6);
+  min-width: 350px;
+  max-width: 700px;
+  padding: 5px; 
+  transition: transform 0.3s ease;
+}
+
+.navbar-search-form input {
+  flex: 1;
+  margin-bottom: -1px;
+  border: none;
+  outline: none;
+  background-color: #fafafa;
+  color: var(--color-0);
+  padding: 9px;
+  border-radius:2500000px ; /* Rounded on the right side */
+  font-size: 16px;
+}
+
+.navbar-search-form:hover {
+  transform: scale(1.05); /* Slightly less aggressive scaling */
+}
+
+.navbar-profile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  padding: 8px; /* Adds padding for better clickable area */
+  border-radius: 50%; /* Makes the icon circular */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for smooth hover effects */
+}
+
+.navbar-profile-icon:hover {
+  background-color: var(--color-4);
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: smaller;
+  }
+
+  .navbar-brand-custom {
+    transform: scale(0.75);
+  }
+
+  .navbar-search-form {
+    margin-top: -2rem;
+    width: 100%;
+  }
+
+  .navbar-profile-icon {
+    transform: scale(1);
+    margin-top: 1rem;
+  }
+
+  .navbar-search-field {
+    border-radius: 0 25px 25px 0;
+    width: calc(100% - 100px);
+  }
+
+  .navbar-search-button {
+    width: 100px;
+  }
+}
+
+@keyframes fradiate {
+  0% {
+    border-color: var(--color-0);
+    color: var(--color-0);
+  }
+  25% {
+    filter: blur(0px);
+  }
+  50% {
+    filter: blur(0px);
+  }
+  75% {
+    filter: blur(0px);
+  }
+  100% {
+    border-color: var(--color-5);
+    color: var(--color-5);
+  }
+}

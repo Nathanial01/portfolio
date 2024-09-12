@@ -1,0 +1,226 @@
+:root {
+  --smiley-1: '😊';
+  --smiley-2: '😇';
+  --smiley-3: '😁';
+  --smiley-4: '😉';
+  --color-0: #ffffff;
+  --color-1: #15791a;
+  --color-2: #a3f706;
+  --color-3: #ffae00;
+  --color-4: hsl(198, 62%, 48%);
+  --color-5: #17d21e;
+  --color-6: rgb(20, 64, 40);
+  --color-7: rgb(0, 255, 115);
+}
+
+/* Base styles for icons and text */
+.icons {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  margin-top: 0%;
+  transform: rotate(-7deg);
+  z-index: 887;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+.skill-icon {
+  font-size: 3rem; /* Adjust size as needed */
+  color: #fff; /* Change color to match your design */
+}
+
+.skill-info {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.skill-name {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff; /* Change color to match your design */
+}
+
+.skill-bar {
+  width: 100px; /* Adjust width as needed */
+  height: 10px; /* Adjust height as needed */
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #4caf50; /* Adjust color for the skill level */
+  width: 0%; /* Default to 0% */
+  transition: width 0.5s ease; /* Smooth transition for the fill effect */
+}
+
+/* Styles for Porto Text */
+.porto-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 100px;
+  margin-top: 40rem; /* Adjust based on your layout */
+  margin-right: 115rem; /* Adjust based on your layout */
+  z-index: 1;
+}
+
+.voornaam,
+.achternaam {
+  font: 8em sans-serif;
+  font-weight: 700;
+  text-shadow: -20px -20px 60px #091b11,
+               -20px -20px 60px #23633d;
+  z-index: -10;
+}
+
+.voornaam {
+  color: var(--color-0);
+ 
+}
+
+.achternaam {
+  
+  color: var(--color-7);
+  font: 9em sans-serif;
+
+}
+.skills{
+  color: var(--color-7);
+  font: 9em sans-serif;
+  margin-bottom: 40rem; /* Adjust based on your layout */
+  margin-right: 5rem; /* Adjust based on your layout */
+
+}
+
+/* Styles for .D-VIEW */
+.D-VIEW {
+  position: relative;
+  width: 800px; /* Adjust to fit your layout */
+  height: 800px; /* Adjust to fit your layout */
+  left: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 72% 28% 70% 30% / 22% 77% 23% 78%;
+  background: linear-gradient(145deg, #18432a, #143923);
+  box-shadow: 17px 17px 34px #091b11,
+              -17px -17px 34px #23633d;
+
+}
+
+/* Keyframes for animation */
+@keyframes radiate {
+  0% {
+    border-color: var(--color-1);
+    color: var(--color-7);
+  }
+  25% {
+    border-color: var(--color-2);
+    color: var(--color-6);
+  }
+  50% {
+    border-color: var(--color-3);
+    color: var(--color-7);
+  }
+  75% {
+    border-color: var(--color-7);
+    color: var(--color-6);
+  }
+  100% {
+    border-color: var(--color-6);
+    color: var(--color-7);
+  }
+}
+@media (min-width: 368px) {
+  .D-VIEW {
+      transform: scale(0.3); /* Slightly larger scale */
+  }
+
+
+}
+
+
+@media (min-width: 576px) {
+  .D-VIEW {
+      transform: scale(0.4); /* Larger scale for tablets */
+  }
+
+
+
+  .voornaam,
+  .achternaam {
+      font: 4em sans-serif; /* Adjust font size */
+  }
+}
+
+/* Large devices and up (768px) */
+@media (min-width: 768px) {
+  .D-VIEW {
+      transform: scale(0.5); /* Increase scale for larger tablets */
+  }
+
+  .voornaam,
+  .achternaam {
+      font: 4.5em sans-serif; /* Larger font size for readability */
+  }
+}
+
+/* Extra-large devices (992px and up) */
+@media (min-width: 992px) {
+  .D-VIEW {
+      transform: scale(0.7); /* Larger scale for laptops */
+  }
+
+
+  .voornaam,
+  .achternaam {
+      font: 5em sans-serif; /* Increase font size for large screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .D-VIEW {
+      transform: scale(0.8); /* Larger scale for laptops */
+  }
+
+  .voornaam,
+  .achternaam {
+      font: 5em sans-serif; /* Increase font size for large screens */
+  }
+}
+/* Extra extra-large devices (1200px and up) */
+@media (min-width: 1500px) {
+  .D-VIEW {
+      transform: scale(1); /* Full scale for desktops */
+  }
+
+  .porto-text {
+      font-size: 1.2rem; /* Larger font size for readability */
+      width: 50%; /* Reduced width for larger screens */
+  }
+
+  .voornaam,
+  .achternaam {
+      font: 5.5em sans-serif; /* Maximum font size for desktops */
+  }
+}

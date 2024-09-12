@@ -1,0 +1,21 @@
+
+
+.talk {
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  color: #fffdfd;
+  margin-bottom: 10px;
+}
+
+.progress-bar-container {
+  background-color: #EEE;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  transition: width 0.5s ease-in-out;
+}

@@ -1,0 +1,119 @@
+:root {
+  --smiley-1: '😊';
+  --smiley-2: '😇';
+  --smiley-3: '😁';
+  --smiley-4: '😉';
+  --color-0: #ffffff;
+  --color-1: #15791a;
+  --color-2: #a3f706;
+  --color-3: #ffae00;
+  --color-4: hsl(198, 62%, 48%);
+  --color-5: #17d21e;
+  --color-6: rgb(20, 64, 40);
+  --color-7: rgb(0, 255, 115);
+  --color-9:   #f8ab04;
+
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+#contact dev {
+  display: flex;
+  align-items: center;
+
+}
+
+#contact img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 10px;
+}
+
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #f8ab04;
+  color: #000000;
+  padding: 10px 20px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5000px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #17d21e;
+  color: var(--color-0);
+}
+
+.contact-form p {
+  text-align: left;
+  margin-left: -100px;
+}
+
+.contact-form p a {
+  color: var(--color-9);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.contact-form p a:hover {
+  text-decoration: underline;
+}
+
+.contact-form p a:before {
+  content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/FaceTime_icon.svg/1024px-FaceTime_icon.svg.png'); /* FaceTime icon */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: -8px;
+}
+.contact-form input {
+  display: flex;
+  align-items: center;
+  border-radius: 25px; /* Rounded edges */
+  overflow: hidden; /* Ensures the form is clipped into the rounded shape */
+  background-color: #fafafa;
+  padding: 9px;
+  max-width: 700px;
+
+}
+.contact-form h2
+{
+margin-top: 100px;
+}

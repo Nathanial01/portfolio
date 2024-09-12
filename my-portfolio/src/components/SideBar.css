@@ -1,0 +1,116 @@
+:root {
+ 
+    --color-1: #15791a;
+    --color-2: #a3f706;
+    --color-3: #ffae00;
+    --color-4: hsl(198, 62%, 48%);
+    --color-5: #17d21e;
+    --color-6:rgb(20, 64, 40);
+  }
+  
+  
+  .Con {
+    position: relative;
+    width: 400px; /* Adjust to fit your layout */
+    height: 400px; /* Adjust to fit your layout */
+    margin: 240px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 36% 64% 70% 30% / 30% 30% 70% 70%;
+    background: var(--color-6);
+    box-shadow: 17px 17px 34px rgb(17, 54, 34),
+                -17px -17px 34px rgb(30, 96, 60);
+  }
+  
+  .TextWarp {
+    position: relative;
+    border-radius: 36% 64% 70% 30% / 30% 30% 70% 70%;
+  }
+  
+  @keyframes rotateEmoji {
+    0% { --current-emoji: var(--smiley-1); }
+    25% { --current-emoji: var(--smiley-2); }
+    50% { --current-emoji: var(--smiley-3); }
+    75% { --current-emoji: var(--smiley-4); }
+    100% { --current-emoji: var(--smiley-1); }
+  }
+  
+  .content {
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    color: rgb(24, 93, 54);
+  }
+  
+  .content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 30px;
+    position: relative;
+  }
+  
+  .content__container::before {
+    content: "<"; 
+    position: absolute;
+    left:0px;
+    color: #16a085;
+    font-size: 30px;
+    line-height: 40px;
+    animation: rotateEmoji 8s infinite;
+  }
+  
+  .content__container::after {
+    content: '>';
+    right: 10px;
+    color: #16a085;
+    font-size: 50px;
+    line-height: 40px;
+    animation: opacity 5s infinite;
+  }
+  
+  .content__text {
+    display: inline;
+    float: left;
+    margin: 0;
+  }
+  
+  .content__list {
+    margin-top: 0;
+    padding-left: 100px;
+    text-align: left;
+    list-style: none;
+    animation: change 10s infinite;
+  }
+  
+  .content__list__item {
+    line-height: 40px;
+    margin: 0;
+  }
+  
+  @keyframes opacity {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  @keyframes change {
+    0%, 12.66%, 100% { transform: translate3d(0, 0, 0); }
+    16.66%, 29.32% { transform: translate3d(0, -25%, 0); }
+    33.32%, 45.98% { transform: translate3d(0, -50%, 0); }
+    49.98%, 62.64% { transform: translate3d(0, -75%, 0); }
+    66.64%, 79.3% { transform: translate3d(0, -50%, 0); }
+    83.3%, 95.96% { transform: translate3d(0, -25%, 0); }
+    16.66%, 29.32% { transform: translate3d(0, -25%, 0); }
+    33.32%, 45.98% { transform: translate3d(0, -50%, 0); }
+    49.98%, 62.64% { transform: translate3d(0, -75%, 0); }
+    66.64%, 79.3% { transform: translate3d(0, -50%, 0); }
+    83.3%, 95.96% { transform: translate3d(0, -25%, 0); }
+  }
+  
