@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NotfcationBaar from './components/NotificationBar.jsx';
 import TopNav from './components/TopNav.jsx';
 import Header from './components/Header.jsx';
@@ -14,37 +14,48 @@ import Footer from './components/Footer.jsx';
 import './App.css';
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  // Handle search
+  const handleSearch = (term) => {
+    setSearchTerm(term.toLowerCase());
+  };
+
+
+  const containsSearchTerm = (text) => {
+    return text.toLowerCase().includes(searchTerm);
+  };
+
   return (
     <>
-     <NotfcationBaar/>
-      <TopNav />
+      <NotfcationBaar />
+      <TopNav onSearch={handleSearch} /> {/* Pass the search handler to TopNav */}
       <div className="app">
-       
         <div className="content_1">
-          <Header  /> {/* Header section, with the id="about" */}
+          <Header /> {/* Header section */}
           <div className="psgeDoen">
             <NextPage />
           </div>
-          <Cv id="cv" /> {/* CV section, with the id="cv" */}
+          <Cv id="cv" />
         </div>
 
         <div className="content">
-          <section id="about"  className="projects"> {/* Interviews section */}
-            <Interviews />
+          <section id="about" className="projects">
+            {containsSearchTerm('interviews') && <Interviews />} {/* Conditionally render based on search term */}
           </section>
-          <section id="talks" className="talks"> {/* Talks section */}
-            <Talks />
+          <section id="talks" className="talks">
+            {containsSearchTerm('talks') && <Talks />}
           </section>
-          <section id="projects" className="interviews"> {/* Projects section */}
-            <Projects />
+          <section id="projects" className="interviews">
+            {containsSearchTerm('projects') && <Projects />}
           </section>
-          <section id="projects" className="interviews"> {/* Projects section */}
-            <BlockchainManager />
+          <section id="blockchain" className="blockchain">
+            {containsSearchTerm('blockchain') && <BlockchainManager />}
           </section>
         </div>
       </div>
-      <Contact/>
-      <Footer id="contact" /> {/* Footer section, with the id="contact" */}
+      <Contact />
+      <Footer id="contact" />
     </>
   );
 }
