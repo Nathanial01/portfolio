@@ -15,13 +15,13 @@ function TopNav() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
 
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-between">
-            <Nav className="ml-auto navbar-links">
-              <Nav.Link href="#about" className="nav-link-custom">About</Nav.Link>
-              <Nav.Link href="#projects" className="nav-link-custom">Projects</Nav.Link>
-              <Nav.Link href="#cryoX" className="nav-link-custom">cryoX Bionic</Nav.Link>
-              <Nav.Link href="#ongoing" className="nav-link-custom">Ongoing</Nav.Link>
-              <Nav.Link href="#hobbies" className="nav-link-custom">Hobbies</Nav.Link>
-              <Nav.Link href="#contact" className="nav-link-custom">Contact</Nav.Link>
+          <Nav className="ml-auto navbar-links">
+              <Nav.Link href="#about" className="nav-link-custom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Nav.Link>
+              <Nav.Link href="#projects" className="nav-link-custom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Nav.Link>
+              <Nav.Link href="#cryoX" className="nav-link-custom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Nav.Link>
+              <Nav.Link href="#ongoing" className="nav-link-custom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Nav.Link>
+              <Nav.Link href="#hobbies" className="nav-link-custom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Nav.Link>
+              <Nav.Link href="#contact" className="nav-link-custom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Nav.Link>
             </Nav>
 
             <Form inline className="navbar-search-form">

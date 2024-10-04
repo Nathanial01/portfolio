@@ -12,7 +12,7 @@ function Header() {
             <OrbitingElements className="orbiting-element" />
           </div>
           <p className="curved-text">
-          Mijn Codering Reis Sinds mijn jeugd ben ik gefascineerd door technologie, waaronder computers, robots en drones. Ondanks de aanzienlijke uitdagingen die ik als vluchteling heb moeten doorstaan, heb ik mijn passie voor technologie nooit opgegeven. Na mijn verhuizing naar Nederland heb ik mijn MBO3 in Elektrotechniek afgerond en richt ik mij nu op het voltooien van mijn MBO4 in Softwareontwikkeling. Mijn reis weerspiegelt mijn toewijding om mijn expertise uit te breiden en de overgang te maken van een hardwaregerichte achtergrond naar een vaardige softwareontwikkelaar. Ik ben momenteel op zoek naar een stage om mijn vaardigheden in een praktische omgeving toe te passen en mijn professionele groei voort te zetten. </p>
+          Sinds mijn jeugd ben ik gefascineerd geweest door technologie, zoals computers, robots, protheses en drones. Ondanks de vele uitdagingen die ik als vluchteling heb meegemaakt, heb ik mijn passie voor technologie nooit verloren. Na mijn verhuizing naar Nederland heb ik mijn MBO 3 diploma in elektrotechniek behaald en zit ik nu in het laatste jaar van mijn MBO 4 opleiding tot softwareontwikkelaar. Mijn ontwikkeling weerspiegelt mijn toewijding om mijn expertise van hardware naar software uit te breiden. Ik kijk ernaar uit om mijn vaardigheden verder te ontwikkelen in een uitdagende stageplek en hoop dat u mij die mogelijkheid wilt bieden.</p>
         </div>
       </div>
     </header>

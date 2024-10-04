@@ -25,7 +25,7 @@ function About() {
               <p>Diploma behaald</p>
             </div>
             <div className="box">
-              <p><strong>CVA</strong></p>
+              <p><strong>VCA</strong></p>
               <p>CVA diploma behaald</p>
             </div>
           </div>
