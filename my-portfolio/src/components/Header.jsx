@@ -5,7 +5,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="header">
-      <h1>Hello, I’m Nathanial Samuel.</h1>
+      <h1>Hi there! I’m Nathanial Samuel.</h1>
       <div className="header-content">
         <div className="curved-text-wrapper">
           <div className="orbiting-element-wrapper">

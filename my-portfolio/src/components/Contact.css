@@ -117,3 +117,41 @@
 {
 margin-top: 100px;
 }
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%; 
+  height: auto;
+  width: 400px; 
+  margin-top: 200px;
+}
+
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}

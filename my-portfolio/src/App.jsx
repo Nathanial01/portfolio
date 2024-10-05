@@ -10,6 +10,7 @@ import NextPage from './components/NextPage.jsx';
 import BlockchainManager from './components/BlockchainManager.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
+import Chatbot from './components/Chatbot'; // Import the Chatbot component
 
 import './App.css';
 
@@ -20,7 +21,6 @@ function App() {
   const handleSearch = (term) => {
     setSearchTerm(term.toLowerCase());
   };
-
 
   const containsSearchTerm = (text) => {
     return text.toLowerCase().includes(searchTerm);
@@ -53,9 +53,14 @@ function App() {
             {containsSearchTerm('blockchain') && <BlockchainManager />}
           </section>
         </div>
+         {/* Chatbot fixed at the bottom-right corner */}
+         <Chatbot />
       </div>
+       
       <Contact />
       <Footer id="contact" />
+
+    
     </>
   );
 }

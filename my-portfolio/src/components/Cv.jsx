@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons
 import './Cv.css';
 
 function Cv() {
@@ -23,6 +24,7 @@ function Cv() {
 
     fetchUsers();
   }, []);
+
   return (
     <div className="container my-9">
       <h1 className="mb-6 text-center">Curriculum Vitae</h1>
@@ -36,7 +38,7 @@ function Cv() {
             <div className="section basic-info">
               <h2 className="section-title">
                 <span className="icon">
-                  <img src="/icons/user.svg" alt="User Icon" />
+                  <i className="bi bi-person-circle"></i> {/* Bootstrap Icon for user */}
                 </span>
                 Basic Information
               </h2>
@@ -49,7 +51,7 @@ function Cv() {
             <div className="section school-info">
               <h2 className="section-title">
                 <span className="icon">
-                  <img src="/icons/school.svg" alt="School Icon" />
+                  <i className="bi bi-house-door"></i> {/* Bootstrap Icon for school */}
                 </span>
                 School
               </h2>
@@ -61,7 +63,7 @@ function Cv() {
             <div className="section languages-info">
               <h2 className="section-title">
                 <span className="icon">
-                  <img src="/icons/languages.svg" alt="Languages Icon" />
+                  <i className="bi bi-globe"></i> {/* Bootstrap Icon for languages */}
                 </span>
                 Languages
               </h2>
@@ -72,7 +74,7 @@ function Cv() {
             <div className="section hobbies-info">
               <h2 className="section-title">
                 <span className="icon">
-                  <img src="/icons/hobbies.svg" alt="Hobbies Icon" />
+                  <i className="bi bi-heart"></i> {/* Bootstrap Icon for hobbies */}
                 </span>
                 Hobbies
               </h2>
@@ -83,7 +85,7 @@ function Cv() {
             <div className="section education-info">
               <h2 className="section-title">
                 <span className="icon">
-                  <img src="/icons/education.svg" alt="Education Icon" />
+                  <i className="bi bi-book"></i> {/* Bootstrap Icon for education */}
                 </span>
                 Education
               </h2>
@@ -100,7 +102,7 @@ function Cv() {
             <div className="section work-info">
               <h2 className="section-title">
                 <span className="icon">
-                  <img src="/icons/work.svg" alt="Work Experience Icon" />
+                  <i className="bi bi-briefcase"></i> {/* Bootstrap Icon for work experience */}
                 </span>
                 Work Experience
               </h2>
@@ -118,7 +120,7 @@ function Cv() {
             <div className="section skills-info">
               <h2 className="section-title">
                 <span className="icon">
-                  <img src="/icons/skills.svg" alt="Skills Icon" />
+                  <i className="bi bi-tools"></i> {/* Bootstrap Icon for skills */}
                 </span>
                 Skills
               </h2>
@@ -131,7 +133,7 @@ function Cv() {
             <div className="section contact-info">
               <h2 className="section-title">
                 <span className="icon">
-                  <img src="/icons/contact.svg" alt="Contact Icon" />
+                  <i className="bi bi-envelope"></i> {/* Bootstrap Icon for contact */}
                 </span>
                 Contact
               </h2>

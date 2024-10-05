@@ -15,7 +15,7 @@ Ik heb een MBO3-opleiding in Elektrotechniek afgerond aan &nbsp;het &nbsp;
 Momenteel volg ik een MBO4-opleiding in Softwareontwikkeling, die ik binnen 1,5 jaar hoop af te ronden. Deze combinatie van studies heeft mij een sterke basis gegeven in zowel hardware als software, waardoor ik problemen vanuit een holistisch en geïntegreerd perspectief kan benaderen.
 </p>  
     </div>
-      <h3>Technische Ervaring </h3>
+      <h3>Technical Experiences</h3>
       <div className="interview">
         
         <p>
